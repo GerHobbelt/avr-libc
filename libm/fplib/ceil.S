@@ -35,9 +35,6 @@
      ceilf(-1.9) --> -1.0
  */
 
-
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -69,5 +66,3 @@ ENTRY_FLOAT ceilf ceil ceill
 
 .L_nf:	XJMP	_U(__fp_mpack)	; pass nonfinite arg as is
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

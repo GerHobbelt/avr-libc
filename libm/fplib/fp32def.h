@@ -30,4 +30,9 @@
 #  define LDI_XH_hh8(sym)	/* empty */
 #endif /* ELPM ? */
 
+/* Bail out on the reduced core.  */
+#ifdef __AVR_TINY__
+	.end
+#endif /* __AVR_TINY__ */
+
 #endif	/* !_FP32DEF_H */

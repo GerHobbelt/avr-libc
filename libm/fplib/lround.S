@@ -26,9 +26,6 @@
    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
    POSSIBILITY OF SUCH DAMAGE. */
 
-
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -113,5 +110,3 @@ ENTRY_FLOAT lroundf lround lroundl
 .L_zr:	XJMP	_U(__fp_zero)	; return 0x00000000
 
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

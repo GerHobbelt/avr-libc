@@ -27,8 +27,6 @@
    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
    POSSIBILITY OF SUCH DAMAGE. */
 
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -110,5 +108,3 @@ ENTRY_FLOAT modff modf modfl
 	std	Z+3, rB3
 1:	ret
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

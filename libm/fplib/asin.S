@@ -32,9 +32,6 @@
      mathematically defined to be between -PI/2 and PI/2 (inclusive).
  */
 
-
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -51,5 +48,3 @@ ENTRY_FLOAT asinf asin asinl
         bld     rA3, 7
         ret
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

@@ -31,8 +31,6 @@
    float __floatunsisf (unsigned long)
  */
 
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -106,5 +104,3 @@ ENTRY   __floatsisf
 	bld	rA3, 7		; sign
 9:	ret
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

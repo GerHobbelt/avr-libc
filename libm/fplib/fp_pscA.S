@@ -27,8 +27,6 @@
    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
    POSSIBILITY OF SUCH DAMAGE. */
 
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -49,5 +47,3 @@ ENTRY   __fp_pscA
 	cpc	r0, rA3
 	ret
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

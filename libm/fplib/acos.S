@@ -32,9 +32,6 @@
      whose cosine is x.
  */
 
-
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -58,5 +55,3 @@ ENTRY_FLOAT acosf acos acosl
         ldi     rB3, hhi8(PI)
         XJMP    _U(__rsubsf3.arccos)
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

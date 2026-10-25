@@ -27,8 +27,6 @@
   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
   POSSIBILITY OF SUCH DAMAGE. */
 
-#ifndef __AVR_TINY__
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -138,5 +136,3 @@ OBJECT .L_asinq
         .byte   0x82,0xfd,0xaa,0x2a,0x3e        ;  0.1666679011
         .byte   0xee,0xff,0xff,0x7f,0x3f        ;  0.9999999956
 ENDOBJ .L_asinq
-
-#endif /* __AVR_TINY__ */

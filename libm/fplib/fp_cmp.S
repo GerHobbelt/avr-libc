@@ -27,8 +27,6 @@
    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
    POSSIBILITY OF SUCH DAMAGE. */
 
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -98,5 +96,3 @@ ENTRY	__fp_cmp
 	adc	rA2, r1		; C = 0 at any case
 9:	ret
 ENDFUNC
-
-#endif /* !defined(__AVR_TINY__) */

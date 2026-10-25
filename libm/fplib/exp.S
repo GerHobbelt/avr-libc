@@ -27,8 +27,6 @@
    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
    POSSIBILITY OF SUCH DAMAGE. */
 
-#if !defined(__AVR_TINY__)
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -121,5 +119,3 @@ OBJECT .L_table
 	.byte	0xf6,0x17,0x72,0x31,0xbf	; -0.6931471802
 	.byte	0x00,0x00,0x00,0x80,0x3f	;  1.0000000000
 ENDOBJ .L_table
-
-#endif /* !defined(__AVR_TINY__) */

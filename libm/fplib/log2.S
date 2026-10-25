@@ -28,8 +28,6 @@
    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
    POSSIBILITY OF SUCH DAMAGE. */
 
-#ifndef __AVR_TINY__
-
 #include "fp32def.h"
 #include "asmdef.h"
 
@@ -163,5 +161,3 @@ OBJECT .L_thigh
     .byte   0x28,0x3b,0xaa,0xb8,0x3f    ;  1.4426950407
     .byte   0x00,0x00,0x00,0x00,0x00    ;  0.0000000000
 ENDOBJ .L_thigh
-
-#endif /* AVR_TINY */
